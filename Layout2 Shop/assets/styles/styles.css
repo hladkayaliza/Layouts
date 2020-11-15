@@ -1,0 +1,119 @@
+:root {
+    --content-padding: 180px;
+    --title-text-color: #252B42;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    border: solid 1px #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.list-reset {
+    list-style: none;
+}
+
+
+.product-header,
+.blog-header {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--title-text-color);
+    margin-bottom: 60px;
+}
+
+/*BLOG PRODUCTS*/
+.product-section {
+    padding: 84px var(--content-padding);
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+}
+
+/*BLOG SECTION*/
+
+.blog-section {
+    padding: 44px var(--content-padding);
+}
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 40px;
+}
+.article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+    .article > :not(.article-description) {
+        margin-bottom: 22px;
+    }
+
+.article-img {
+    width: 100%;
+}
+.article-description {
+    padding: 5px 100px 25px 14px;
+}
+
+.date {
+    text-transform: capitalize;
+    color: #BDBDBD;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.article-title {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.article-overview {
+    color:#858585;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.article-links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+    .article-links li:not(:last-child) {
+        margin-right: 16px;
+    }
+
+.article-link {
+    color: #8EC2F2;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+    .article-link:hover {
+        color:#5f809e;
+    }
