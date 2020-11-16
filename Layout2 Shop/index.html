@@ -3,32 +3,88 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My first layout</title>
+        <title>My second layout</title>
         <link rel="stylesheet" type="text/css" href="./assets/styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
 
     <body>
-    <section class="product-section">
-        <header class="product-header">
-            <h3 class="title">Latest products</h3>
-            <nav></nav>
+
+
+    <section class="product-section align-section">
+        <header class="product-header header-align header-section">
+            <h3 class="title">Featured Products</h3>
+            <ul class="products-filter list-reset">
+                <li>
+                    <button class="btn btn-filter">Featured</button>
+                </li>
+                <li>
+                    <button class="btn btn-filter">Best Seller</button>
+                </li>
+                <li>
+                    <button class="btn btn-filter">New Arrivals</button>
+                </li>
+            </ul>
         </header>
 
-        <div class="products">
-            <div class="product">1</div>
-            <div class="product">2</div>
-            <div class="product">3</div>
-            <div class="product">4</div>
-            <div class="product">5</div>
-            <div class="product">6</div>
+        <div class="featured-products">
+            <div class="product">
+                <div class="img-container">
+                 <img src="assets/images/content/products/red_shirt.svg" alt="Red shirt">
+                 <img class="img-like" src="assets/images/content/products/like.svg">
+                </div>
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/white_pants.svg" alt="White pants">
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/white_shirt%20(2).svg" alt="White shirt">
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/white_shirt.svg" alt="White shirt">
+            </div>
         </div>
 
     </section>
 
-    <section class="blog-section">
-        <header class="blog-header">
+    <section class="last-products-section align-section">
+        <header class="last-products-header header-section header-align">
+            <h3 class="title">Latest Products</h3>
+        </header>
+
+        <div class="last-products">
+            <div class="product">
+                <img src="assets/images/content/products/white_blue_sneakers.svg" alt="Blue sneakers" />
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/black_pullover.svg" alt="Black pullover" />
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/green_pullover.svg" alt="Green pullover" />
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/sneakers.svg" alt="Sneakers" />
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/brown_sneakers.svg" alt="Brown sneakers" />
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/dress.svg" alt="Dress" />
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/white_sneakers.svg" alt="White sneakers" />
+            </div>
+            <div class="product">
+                <img src="assets/images/content/products/shorts.svg" alt="Shorts" />
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="blog-section align-section">
+        <header class="blog-header header-align header-section">
             <h3 class="title">Our blog</h3>
         </header>
 
