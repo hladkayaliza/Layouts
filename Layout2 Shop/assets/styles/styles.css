@@ -117,3 +117,46 @@ ul {
     .article-link:hover {
         color:#5f809e;
     }
+
+    @media (max-width: 768px) {
+        .article {
+            padding: 15px;
+        }
+
+    }
+
+@media (max-width: 768px) {
+
+    /*BLOG SECTION*/
+    .blog-section {
+        padding: 15px;
+    }
+    .product-header,
+    .blog-header {
+        margin-bottom: 35px;
+    }
+    .article-overview {
+        margin-bottom: 18px;
+    }
+    .article-description {
+        padding: 5px 58px 18px 14px;
+    }
+}
+
+@media (max-width: 416px) {
+
+    /*BLOG SECTION*/
+    .blog-section {
+        padding: 8px;
+    }
+    .product-header,
+    .blog-header {
+        margin-bottom: 24px;
+    }
+    .article-overview {
+        margin-bottom: 12px;
+    }
+    .article-description {
+        padding: 5px 48px 14px 14px;
+    }
+}
