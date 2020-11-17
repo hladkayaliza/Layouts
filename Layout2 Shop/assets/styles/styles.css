@@ -4,6 +4,7 @@
     --title-text-color: #252B42;
     --second-text-color: #737373;
     --active-color: #2091F9;
+    --primary-color: #fff;
 }
 
 * {
@@ -17,8 +18,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
 a {
     text-decoration: none;
+}
+h1,h2,h3 {
+    margin: 0;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.upper {
+    text-transform: uppercase;
 }
 
 ul {
@@ -79,10 +96,20 @@ ul {
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-
-
+    .nav-link:hover::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        content: '';
+        display: block;
+        height: 2px;
+        width: 50%;
+        background-color: var(--primary-color);
+        transform: translateX(-50%);
+    }
 
 
 
@@ -107,6 +134,10 @@ ul {
             margin-right: 26px;
         }
 
+.link-img:hover {
+    transform: scale(1.1) ;
+}
+
 .basket {
     position: relative;
 }
@@ -124,32 +155,7 @@ ul {
     color: #ffffff;
     font-size: 14px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*SECTIONS*/
 
 
 .align-section {
@@ -164,6 +170,48 @@ ul {
     color: var(--title-text-color);
     margin-bottom: 60px;
 }
+
+/*MAIN SECTION*/
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 152px var(--content-padding);
+    background-color: transparent;
+    color: #ffffff;
+}
+    .main-section .text {
+        font-weight: 500;
+        letter-spacing: 1.1px;
+    }
+
+.main-section > :not(.btn) {
+    margin-bottom: 36px;
+}
+
+.main-title {
+    font-weight: 800;
+    font-size: 58px;
+}
+.main-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.btn-shop {
+    padding: 16px 46px;
+    border: none;
+    background-color: var(--primary-color);
+    color:var(--active-color);
+    font-size: 18px;
+    transition: background-color 1s ease;
+}
+    .btn-shop:hover {
+        background-color: var(--second-text-color);
+    }
+
+
+
 
 /*PRODUCTS*/
 .products-filter {
