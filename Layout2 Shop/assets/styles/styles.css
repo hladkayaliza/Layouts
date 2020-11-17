@@ -38,6 +38,98 @@ ul {
         cursor: pointer;
     }
 
+
+/*HEADER*/
+.wrapper {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.main-header {
+    display: flex;
+    padding: 26px 76px;
+}
+
+.logo-link {
+    margin-right: 68px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+
+.item {
+    margin-right: 38px;
+}
+.item:last-child {
+    margin-right: 0;
+}
+
+.menu-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px 6px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.btn-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-link {
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-link a {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+    .btn-link:not(:last-child) {
+        margin-right: 26px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .align-section {
     padding: 84px var(--content-padding);
 }
