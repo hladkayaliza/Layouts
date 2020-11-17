@@ -1,221 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My second layout</title>
-        <link rel="stylesheet" type="text/css" href="./assets/styles/normalize.css">
-        <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    </head>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>My second layout</title>
+            <link rel="stylesheet" type="text/css" href="./assets/styles/normalize.css">
+            <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        </head>
+        <body>
 
-    <body>
-    <picture >
-        <source srcset="assets/images/header/background-small.svg" media="(max-width: 416px)">
-        <img class="wrapper" src="assets/images/header/background-full.svg" alt="wrapper">
-    </picture>
-    <header class="main-header">
-        <a class="logo-link" href="#">
-            <img src="assets/images/header/logo.svg" alt="logo" />
-        </a>
-        <ul class="nav items list-reset">
-            <li class="item">
-                <a class="menu-link" href="#">Home</a>
-            </li>
-            <li class="item">
-                <a class="menu-link" href="#">Shop</a>
-            </li>
-            <li class="item">
-                <a class="menu-link" href="#">Account</a>
-            </li>
-            <li class="item">
-                <a class="menu-link" href="#">Pages</a>
-            </li>
-            <li class="item">
-                <a class="menu-link" href="#">Blog</a>
-            </li>
-            <li class="item">
-                <a class="menu-link" href="#">Docs / Components</a>
-            </li>
-        </ul>
-        <div class="btn-links">
-                <a class="btn-link" href="#">
-                    <div class="btn-icon">
-                        <img src="assets/images/header/avatar.svg" alt="my account" />
-                    </div>
-                    My Account
-                </a>
-                <a class="btn-link" href="#">
-                    <div>
-                        <img src="assets/images/header/like.svg" alt="like" />
-                    </div>
-                </a>
-                <a class="btn-link" href="#">
-                    <div>
-                        <img src="assets/images/header/basket.svg" alt="basket" />
-                    </div>
-                </a>
-            </div>
-        </div>
+        <picture >
+            <source srcset="assets/images/header/background-small.svg" media="(max-width: 416px)">
+            <img class="wrapper" src="assets/images/header/background-full.svg" alt="wrapper">
+        </picture>
 
+        <header class="main-header">
+            <a class="logo-link" href="#">
+                <img src="assets/images/header/logo.svg" alt="logo" />
+            </a>
 
-
-
-    </header>
-
-
-    <section class="product-section align-section">
-        <header class="product-header header-align header-section">
-            <h3 class="title">Featured Products</h3>
-            <ul class="products-filter list-reset">
-                <li>
-                    <button class="btn btn-filter">Featured</button>
+            <ul class="nav nav-items list-reset">
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="#">Home</a>
                 </li>
-                <li>
-                    <button class="btn btn-filter">Best Seller</button>
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="#">Shop</a>
                 </li>
-                <li>
-                    <button class="btn btn-filter">New Arrivals</button>
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="#">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-text" href="#">Docs / Components</a>
                 </li>
             </ul>
+
+            <div class="header-links">
+                    <a class="header-link" href="#">
+                        <img src="assets/images/header/avatar.svg" alt="my account" />
+                        <span class="nav-text">My Account</span>
+                    </a>
+                    <a class="header-link" href="#">
+                        <img src="assets/images/header/like.svg" alt="like" />
+                    </a>
+                    <a class="header-link basket" href="#">
+                        <img src="assets/images/header/basket.svg" alt="basket" />
+                        <div class="counter">2</div>
+                    </a>
+                </div>
+            </div>
+
+
+
+
         </header>
 
-        <div class="featured-products">
-            <div class="product">
-                <div class="img-container">
-                 <img src="assets/images/content/products/red_shirt.svg" alt="Red shirt">
-                 <img class="img-like" src="assets/images/content/products/like.svg">
+
+        <section class="product-section align-section">
+            <header class="product-header header-align header-section">
+                <h3 class="title">Featured Products</h3>
+                <ul class="products-filter list-reset">
+                    <li>
+                        <button class="btn btn-filter">Featured</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-filter">Best Seller</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-filter">New Arrivals</button>
+                    </li>
+                </ul>
+            </header>
+
+            <div class="featured-products">
+                <div class="product">
+                    <div class="img-container">
+                     <img src="assets/images/content/products/red_shirt.svg" alt="Red shirt">
+                     <img class="img-like" src="assets/images/content/products/like.svg">
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/images/content/products/white_pants.svg" alt="White pants">
+                </div>
+                <div class="product">
+                    <img src="assets/images/content/products/white_shirt%20(2).svg" alt="White shirt">
+                </div>
+                <div class="product">
+                    <img src="assets/images/content/products/white_shirt.svg" alt="White shirt">
                 </div>
             </div>
-            <div class="product">
-                <img src="assets/images/content/products/white_pants.svg" alt="White pants">
-            </div>
-            <div class="product">
-                <img src="assets/images/content/products/white_shirt%20(2).svg" alt="White shirt">
-            </div>
-            <div class="product">
-                <img src="assets/images/content/products/white_shirt.svg" alt="White shirt">
-            </div>
-        </div>
 
-    </section>
+        </section>
 
-    <section class="last-products-section align-section">
-        <header class="last-products-header header-section header-align">
-            <h3 class="title">Latest Products</h3>
-        </header>
+        <section class="last-products-section align-section">
+            <header class="last-products-header header-section header-align">
+                <h3 class="title">Latest Products</h3>
+            </header>
 
-        <div class="last-products">
-            <div class="product">
-                <img src="assets/images/content/products/white_blue_sneakers.svg" alt="Blue sneakers" />
-            </div>
-            <div class="product">
-                <img src="assets/images/content/products/black_pullover.svg" alt="Black pullover" />
-            </div>
-            <div class="product">
-                <img src="assets/images/content/products/green_pullover.svg" alt="Green pullover" />
-            </div>
-            <div class="product">
-                <img src="assets/images/content/products/sneakers.svg" alt="Sneakers" />
-            </div>
-            <div class="product">
-                <img src="assets/images/content/products/brown_sneakers.svg" alt="Brown sneakers" />
-            </div>
-            <div class="product">
-                <img src="assets/images/content/products/dress.svg" alt="Dress" />
-            </div>
-            <div class="product">
-                <img src="assets/images/content/products/white_sneakers.svg" alt="White sneakers" />
-            </div>
-            <div class="product">
-                <img src="assets/images/content/products/shorts.svg" alt="Shorts" />
-            </div>
-        </div>
-
-    </section>
-
-
-    <section class="blog-section align-section">
-        <header class="blog-header header-align header-section">
-            <h3 class="title">Our blog</h3>
-        </header>
-
-        <div class="articles">
-            <div class="article">
-                <div class="img-container">
-                     <img class="article-img" src="assets/images/content/blog/first.svg" alt="First article" />
+            <div class="last-products">
+                <div class="product">
+                    <img src="assets/images/content/products/white_blue_sneakers.svg" alt="Blue sneakers" />
                 </div>
-                <div class="article-description">
-                    <p class="date">20 JUNE 2019</p>
-                    <p class="article-title">Life Tips From Top Ten Adventure</p>
-                    <p class="article-overview">
-                        Slate helps you see how many
-                        more days you need to work to
-                        reach.</p>
-                    <ul class="article-links list-reset">
-                        <li>
-                            <a class="article-link" href="#">Google</a>
-                        </li>
-                        <li>
-                            <a class="article-link" href="#">Trending</a>
-                        </li>
-                        <li>
-                            <a class="article-link" href="#">New</a>
-                        </li>
-                    </ul>
+                <div class="product">
+                    <img src="assets/images/content/products/black_pullover.svg" alt="Black pullover" />
+                </div>
+                <div class="product">
+                    <img src="assets/images/content/products/green_pullover.svg" alt="Green pullover" />
+                </div>
+                <div class="product">
+                    <img src="assets/images/content/products/sneakers.svg" alt="Sneakers" />
+                </div>
+                <div class="product">
+                    <img src="assets/images/content/products/brown_sneakers.svg" alt="Brown sneakers" />
+                </div>
+                <div class="product">
+                    <img src="assets/images/content/products/dress.svg" alt="Dress" />
+                </div>
+                <div class="product">
+                    <img src="assets/images/content/products/white_sneakers.svg" alt="White sneakers" />
+                </div>
+                <div class="product">
+                    <img src="assets/images/content/products/shorts.svg" alt="Shorts" />
                 </div>
             </div>
-            <div class="article">
-                <div class="img-container">
-                    <img class="article-img" src="assets/images/content/blog/second.svg" alt="Second article" />
+
+        </section>
+
+
+        <section class="blog-section align-section">
+            <header class="blog-header header-align header-section">
+                <h3 class="title">Our blog</h3>
+            </header>
+
+            <div class="articles">
+                <div class="article">
+                    <div class="img-container">
+                         <img class="article-img" src="assets/images/content/blog/first.svg" alt="First article" />
+                    </div>
+                    <div class="article-description">
+                        <p class="date">20 JUNE 2019</p>
+                        <p class="article-title">Life Tips From Top Ten Adventure</p>
+                        <p class="article-overview">
+                            Slate helps you see how many
+                            more days you need to work to
+                            reach.</p>
+                        <ul class="article-links list-reset">
+                            <li>
+                                <a class="article-link" href="#">Google</a>
+                            </li>
+                            <li>
+                                <a class="article-link" href="#">Trending</a>
+                            </li>
+                            <li>
+                                <a class="article-link" href="#">New</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="article-description">
-                    <p class="date">20 JUNE 2019</p>
-                    <p class="article-title">Life Tips From Top Ten Adventure</p>
-                    <p class="article-overview">
-                        Slate helps you see how many
-                        more days you need to work to
-                        reach.</p>
-                    <ul class="article-links list-reset">
-                        <li>
-                            <a class="article-link" href="#">Google</a>
-                        </li>
-                        <li>
-                            <a class="article-link" href="#">Trending</a>
-                        </li>
-                        <li>
-                            <a class="article-link" href="#">New</a>
-                        </li>
-                    </ul>
+                <div class="article">
+                    <div class="img-container">
+                        <img class="article-img" src="assets/images/content/blog/second.svg" alt="Second article" />
+                    </div>
+                    <div class="article-description">
+                        <p class="date">20 JUNE 2019</p>
+                        <p class="article-title">Life Tips From Top Ten Adventure</p>
+                        <p class="article-overview">
+                            Slate helps you see how many
+                            more days you need to work to
+                            reach.</p>
+                        <ul class="article-links list-reset">
+                            <li>
+                                <a class="article-link" href="#">Google</a>
+                            </li>
+                            <li>
+                                <a class="article-link" href="#">Trending</a>
+                            </li>
+                            <li>
+                                <a class="article-link" href="#">New</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="img-container">
+                        <img class="article-img" src="assets/images/content/blog/third.svg" alt="Third article" />
+                    </div>
+
+                    <div class="article-description">
+                        <p class="date">20 JUNE 2019</p>
+                        <p class="article-title">Life Tips From Top Ten Adventure</p>
+                        <p class="article-overview">
+                            Slate helps you see how many
+                            more days you need to work to
+                            reach.</p>
+                        <ul class="article-links list-reset">
+                            <li>
+                                <a class="article-link" href="#">Google</a>
+                            </li>
+                            <li>
+                                <a class="article-link" href="#">Trending</a>
+                            </li>
+                            <li>
+                                <a class="article-link" href="#">New</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="article">
-                <div class="img-container">
-                    <img class="article-img" src="assets/images/content/blog/third.svg" alt="Third article" />
-                </div>
+        </section>
 
-                <div class="article-description">
-                    <p class="date">20 JUNE 2019</p>
-                    <p class="article-title">Life Tips From Top Ten Adventure</p>
-                    <p class="article-overview">
-                        Slate helps you see how many
-                        more days you need to work to
-                        reach.</p>
-                    <ul class="article-links list-reset">
-                        <li>
-                            <a class="article-link" href="#">Google</a>
-                        </li>
-                        <li>
-                            <a class="article-link" href="#">Trending</a>
-                        </li>
-                        <li>
-                            <a class="article-link" href="#">New</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    </body>
-</html>
+        </body>
+    </html>
