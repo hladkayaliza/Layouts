@@ -1,10 +1,11 @@
 :root {
-    --content-padding: 180px;
+    --content-padding: 160px;
     --content-padding-desctop: 60px;
     --title-text-color: #252B42;
-    --second-text-color: #737373;
+    --second-text-color: #c4c0c0;
     --active-color: #2091F9;
     --primary-color: #fff;
+    --dark-background-color: #252B42;
 }
 
 * {
@@ -155,8 +156,34 @@ ul {
     color: #ffffff;
     font-size: 14px;
 }
-/*SECTIONS*/
 
+
+/*FOOTER*/
+.root-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 76px;
+    background-color: var(--dark-background-color);
+    min-height: 120px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-link-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.social-link {
+    display: inline-block;
+}
+
+.nav-footer {
+    margin-right: 66px;
+}
+/*SECTIONS*/
 
 .align-section {
     padding: 84px var(--content-padding);
@@ -214,11 +241,12 @@ ul {
 
 
 /*PRODUCTS*/
+
 .products-filter {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 25px 180px;
+    padding: 25px 240px;
 }
 
 .btn-filter {
@@ -230,6 +258,7 @@ ul {
     color: var(--second-text-color);
     padding: 0 0 12px;
 }
+
     .btn-filter:hover {
         color: var(--active-color);
     }
@@ -248,28 +277,140 @@ ul {
 
 .featured-products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(242px, 260px));
     grid-template-rows: 1fr;
-    grid-gap: 54px;
+    grid-gap: 40px;
     text-align: center;
 }
+
+.product {
+    padding: 0 12px;
+}
+
+.product-img {
+    position: relative;
+    /*z-index: 1;*/
+}
+    .product-img::after {
+        display: inline-block;
+        position: absolute;
+        content: url("../images/content/products/product-like.svg");
+        height: max-content;
+        width: max-content;
+        top: 0;
+        right: 0;
+        /*z-index: 4;*/
+
+    }
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+    .product-description >:not(.product-sizes):not(.product-name) {
+        margin-bottom: 14px;
+    }
+
+.product-name {
+    font-size: 20px;
+    color: var(--title-text-color);
+}
+
+.product-category {
+    color: var(--second-text-color);
+}
+
+.product-colors {
+    display: flex;
+}
+
+.color:not(:last-child)  {
+    margin-right: 8px;
+}
+
+.btn-color {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+    .btn-color:hover {
+        cursor: pointer;
+    }
+
+.btn-blue {
+    background-color: #2091F9;
+}
+
+.btn-green {
+    background-color: #2DC071;
+}
+
+.btn-orange {
+    background-color: #E77C40;
+}
+
+.btn-black {
+    background-color: #252B42;
+}
+
+.product-sizes {
+    display: flex;
+}
+
+.btn-size:hover {
+    cursor: pointer;
+}
+
+.size {
+    margin-right: 10px;
+}
+
+
+/*LAST RPODUCT*/
+
+.last-product {
+    padding: 0 12px;
+}
+
+.last-product-description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+    .last-product-description >:not(.last-product-name) {
+        margin-bottom: 14px;
+    }
+
+.last-product-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.last-product-category {
+    font-size: 16px;
+    color: var(--second-text-color);
+}
+
 
 .last-products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 54px;
+    grid-gap: 40px;
     text-align: center;
 }
 
-.img-container {
-    position: relative;
-}
-.img-like {
-    position: absolute;
-    top: 2%;
-    right: 4%;
-}
+
+
+
+
+
 
 /*BLOG SECTION*/
 .articles {
@@ -346,6 +487,10 @@ ul {
     .align-section {
         padding: 52px var(--content-padding-desctop) ;
     }
+
+    .last-product-description {
+        padding: 0 8px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -374,6 +519,10 @@ ul {
     /*PRODUCT SECTION*/
     .products-filter {
         padding: 16px 0;
+    }
+
+    .last-product-description {
+        padding: 0 46px;
     }
 }
 
