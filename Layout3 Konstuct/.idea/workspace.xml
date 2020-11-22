@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c6a4332-239c-49fb-a019-fce6770f1394" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Layout2 Shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Layout2 Shop/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/nav-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605817021312</updated>
       <workItem from="1605817022387" duration="9022000" />
-      <workItem from="1605870786076" duration="19004000" />
+      <workItem from="1605870786076" duration="48946000" />
     </task>
     <servers />
   </component>
@@ -73,6 +74,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606000536926">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606000536926" />
     <state x="-11" y="18" width="1146" height="810" maximized="true" key="dock-window-1" timestamp="1605941185785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

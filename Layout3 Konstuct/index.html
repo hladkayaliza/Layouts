@@ -6,57 +6,64 @@
         <title>Konstuct</title>
         <link rel="stylesheet" type="text/css" href="./assets/styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/nav-menu.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
-    <header class="header-wrapper">
-        <img class="logo" src="./assets/images/logo-light.svg" alt="Logo" />
 
-        <div class="title">
-            <h1 class="title-name">PARTNER WITH KONSTUCT</h1>
-            <p class="title-text">An award-winning construction management firm</p>
+    <section class="presentation">
+        <img class="presentation__logo min-wrap" src="./assets/images/logo-light.svg" alt="Logo" />
+
+        <div class="title min-wrap">
+            <h1 class="title__name">PARTNER WITH KONSTUCT</h1>
+            <p class="title__text">An award-winning construction management firm</p>
         </div>
 
-        <h4 class="helper">
-            <a class="helper-link" href="">SCROLL DOWN</a>
-        </h4>
-    </header>
+        <a class="scroll-link min-wrap" href="# ">SCROLL DOWN</a>
+    </section>
 
-    <header class="header-navigation">
-        <img src="./assets/images/logo-dark.svg" alt="Logo" />
+    <header class="app-header">
+        <nav class="main-nav">
+            <img class="header__logo__image" src="./assets/images/logo-dark.svg" alt="Logo" />
 
-        <ul class="list-reset nav-menu">
-            <li class="nav">
-                <a class="menu-link" href="#">HOME</a>
-            </li>
-            <li class="nav">
-                <a class="menu-link" href="#">ABOUT</a>
-            </li>
-            <li class="nav">
-                <a class="menu-link" href="#">SERVICES</a>
-            </li>
-            <li class="nav">
-                <a class="menu-link" href="#">WORK</a>
-            </li>
-            <li class="nav">
-                <a class="menu-link" href="#">CONTACT</a>
-            </li>
-        </ul>
+            <ul class="nav-links">
+                <li class="nav-links__item">
+                    <a class="nav__link"  href="#">Home</a>
+                </li>
+                <li class="nav-links__item">
+                    <a class="nav__link" href="#">About</a>
+                </li>
+                <li class="nav-links__item">
+                    <a class="nav__link" href="#">SERVICES</a>
+                </li>
+                <li class="nav-links__item">
+                    <a class="nav__link" href="#">WORK</a>
+                </li>
+                <li class="nav-links__item">
+                    <a class="nav__link" href="#">CONTACT</a>
+                </li>
+            </ul>
+
+            <div class="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </nav>
 
     </header>
 
     <section class="our-story">
-        <h2 class="section-title our-story-title">our story</h2>
-        <div class="our-story-content">
-
-            <div class="our-story-col story-text">
-                <p class="col-title">Founded in 2011 by John Mathew Smith,
-                    <span class="key-word">Konstruct</span> has become the number
-                    one construction management firm</p>
-                <p class="col-text">
+        <h2 class="section__title our-story__title">our story</h2>
+        <div class="our-story__content">
+            <div class="our-story__col">
+                <h3 class="our-story__col__title">Founded in 2011 by John Mathew Smith,
+                    <span class="our-story__col__key-word">Konstruct</span> has become the number
+                    one construction management firm</h3>
+                <p class="our-story__col__text">
                     Lorem ipsum dolor sit amet,
                     consectetuer adipiscing elit,
                     sed diam nonummy nibh euismod tincidunt
@@ -67,17 +74,17 @@
                 </p>
             </div>
 
-            <div class="our-story-col our-story-images">
-                <img class="our-story-image" src="./assets/images/img-one.svg" alt="Image one" />
-                <img class="our-story-images" src="./assets/images/img-two.svg" alt="Image two" />
-                <img class="our-story-images" src="./assets/images/img-three.svg" alt="Image three" />
+            <div class="our-story-col our-story__images">
+                <img class="our-story__image" src="./assets/images/img-one.svg" alt="Image one" />
+                <img class="our-story__image" src="./assets/images/img-two.svg" alt="Image two" />
+                <img class="our-story__image" src="./assets/images/img-three.svg" alt="Image three" />
             </div>
         </div>
     </section>
 
     <section class="our-capabilities">
-        <h2 class="section-title our-capabilities-title">our capabilities</h2>
-        <p class="our-capabilities-text">
+        <h2 class="section__title our-capabilities__title">our capabilities</h2>
+        <p class="our-capabilities__text">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
             ut laoreet dolore magna aliquam erat.
         </p>
@@ -86,159 +93,153 @@
 
     <section class="cases">
         <div class="case">
-            <div class="case-content">
-                <img class="case-img" src="./assets/images/case-one.svg" alt="Case one" />
-                <h3 class=  "case-title">PROJECT AND CONSTRUCTION MANAGEMENT</h3>
-                <p class="case-text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-                </p>
-            </div>
-
+            <img class="case__img" src="./assets/images/case-one.svg" alt="Case one" />
+            <h3 class="case__title">PROJECT AND CONSTRUCTION MANAGEMENT</h3>
+            <p class="case__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+            </p>
         </div>
         <div class="case">
-            <div class="case-content">
-                <img src="./assets/images/case-two.svg" alt="Case two" />
-                <h3 class="case-title">STRUCTURE AUDIT AND MAINTENANCE</h3>
-                <p class="case-text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-                </p>
-            </div>
+            <img class="case__img" src="./assets/images/case-two.svg" alt="Case two" />
+            <h3 class="case__title">STRUCTURE AUDIT AND MAINTENANCE</h3>
+            <p class="case__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+            </p>
         </div>
 
         <div class="case">
-            <div class="case-content">
-                <img src="./assets/images/case-three.svg" alt="Case three" />
-                <h3 class="case-title">FACTORY CONSTRUCTION AND MODELING</h3>
-                <p class="case-text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-                </p>
-            </div>
+            <img class="case__img" src="./assets/images/case-three.svg" alt="Case three" />
+            <h3 class="case__title">FACTORY CONSTRUCTION AND MODELING</h3>
+            <p class="case__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+            </p>
         </div>
     </section>
 
     <section class="get-in-touch">
-        <div class="get-in-touch-content">
-            <h2 class="get-in-touch-title">
+            <h2 class="get-in-touch__title">
                 Want to build something amazing?
             </h2>
-            <button class="btn ">GET IN TOUCH</button>
-        </div>
+            <button class="btn">GET IN TOUCH</button>
     </section>
 
     <section class="sign-up">
-        <h2 class="sign-up-title">Newsletter Signup</h2>
-        <div class="signup-conatiner">
-            <input class="sign-up-input" type="email" placeholder="test@youremail.com" />
-            <button class="btn">SIGNUP</button>
-        </div>
-
+        <h2 class="sign-up__title">Newsletter Signup</h2>
+        <form method="post" action="#" class="signup__form">
+            <input class="sign-up__input" type="email" placeholder="test@youremail.com" />
+            <button class="btn sign-up__submit" type="submit" class="btn">SIGNUP</button>
+        </form>
     </section>
 
-<!--    <footer class="footer-container">-->
-<!--            <h4 class="title-company">Company</h4>-->
-<!--            <div class="footer-logo">-->
-<!--                <img src="./assets/images/logo-light.svg" alt="Logo" />-->
-<!--            </div>-->
-<!--            <p class="company-info-text">-->
-<!--                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,-->
-<!--                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.-->
-<!--            </p>-->
+    <footer  class="app-footer">
+        <div class="footer__block company">
+            <h4 class="footer__block__title">COMPANY</h4>
 
-<!--            <h4 class="title-links">Links</h4>-->
+            <img class="footer__logo" src="./assets/images/logo-light.svg" alt="Logo">
 
-<!--            <ul class="list-reset">-->
-<!--                <li class="link-home">-->
-<!--                    <a href="#">Home</a>-->
-<!--                </li>-->
-<!--                <li class="link-about">-->
-<!--                    <a href="#">About</a>-->
-<!--                </li>-->
-<!--                <li class="link-services">-->
-<!--                    <a href="#">Services</a>-->
-<!--                </li>-->
-<!--                <li class="link-project">-->
-<!--                    <a href="#">Projects</a>-->
-<!--                </li>-->
-<!--                <li class="link-contact-us">-->
-<!--                    <a href="#">Contact us</a>-->
-<!--                </li>-->
-<!--            </ul>-->
+            <p class="company__block__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                magna aliquam erat.
+            </p>
+        </div>
+        <div class="footer__block">
+            <h4 class="footer__block__title">LINKS</h4>
+            <div class="links__container">
+                <ul class="links">
+                    <li class="link">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">SERVICES</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">PROJECTS</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">CONTACT US</a>
+                    </li>
+                </ul>
+                <ul class="links">
+                    <li class="link">
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">TERMS</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">CAREERS</a>
+                    </li>
+                </ul>
+                <ul class="links">
+                    <li class="link">
+                        <a href="#">BLOG</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">PARTNERS</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">NEWS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+        <div class="footer__block">
+            <h4 class="footer__block__title">CONTACT US</h4>
+            <div class="contact-us__container">
+                <div class="address__block">
+                    <p> 213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name</p>
+                    <p>+23 994 233 4022</p>
+                    <p>info@konstruct.com</p>
+                </div>
+                <ul class="social-links__block">
+                    <li class="social-link">
+                        <a href="#">
+                            <img class="social-image" src="./assets/images/twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="#">
+                            <img class="social-image" src="./assets/images/facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="#">
+                            <img class="social-image" src="./assets/images/gmail.svg" alt="Gmail">
+                        </a>
+                    </li>
+
+                </ul>
 
 
+            </div>
 
-<!--&lt;!&ndash;        &ndash;&gt;-->
-<!--&lt;!&ndash;        <h4 class="title-contact-us"></h4>&ndash;&gt;-->
+        </div>
+    </footer>
 
-<!--&lt;!&ndash;        <h4 class="title-l">Links</h4>&ndash;&gt;-->
-
-
-<!--        &lt;!&ndash;        <div class="company-info">&ndash;&gt;-->
-<!--&lt;!&ndash;            <h4 class="footer-item-title">Company</h4>&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="footer-nav-menu">&ndash;&gt;-->
-<!--&lt;!&ndash;            <h4 class="footer-item-title">LINKS</h4>&ndash;&gt;-->
-<!--&lt;!&ndash;            <ul class="footer-nav-link list-reset">&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link-title">Links</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link">Home</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link">About</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link">Services</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link">Projects</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link">Contact us</li>&ndash;&gt;-->
-<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;        <div class="faq">&ndash;&gt;-->
-<!--&lt;!&ndash;            <h4 class="footer-item-title">&ndash;&gt;-->
-
-<!--&lt;!&ndash;            </h4>&ndash;&gt;-->
-<!--&lt;!&ndash;            <ul class="footer-nav-link list-reset">&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link-title">Links</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link">Home</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link">About</li>&ndash;&gt;-->
-<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;        <div class="blog">&ndash;&gt;-->
-<!--&lt;!&ndash;            <h4 class="footer-item-title">&ndash;&gt;-->
-
-<!--&lt;!&ndash;            </h4>&ndash;&gt;-->
-<!--&lt;!&ndash;            <ul class="footer-nav-link list-reset">&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link-title">Links</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link">Home</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                <li class="link">About</li>&ndash;&gt;-->
-<!--&lt;!&ndash;            </ul>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;        <div class="contact-us">&ndash;&gt;-->
-<!--&lt;!&ndash;            <h4 class="footer-item-title">CONTACT US</h4>&ndash;&gt;-->
-
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-
-<!--&lt;!&ndash;        <ul class="social-links list-reset">&ndash;&gt;-->
-<!--&lt;!&ndash;            <li class="social-link">&ndash;&gt;-->
-<!--&lt;!&ndash;                <img src="./assets/images/facebook.svg"  alt="Facebook"/>&ndash;&gt;-->
-<!--&lt;!&ndash;            </li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li class="social-link">&ndash;&gt;-->
-<!--&lt;!&ndash;                <img src="./assets/images/twitter.svg"  alt="Twitter"/>&ndash;&gt;-->
-<!--&lt;!&ndash;            </li>&ndash;&gt;-->
-<!--&lt;!&ndash;            <li class="social-link">&ndash;&gt;-->
-<!--&lt;!&ndash;                <img src="./assets/images/gmail.svg"  alt="Gmail"/>&ndash;&gt;-->
-<!--&lt;!&ndash;            </li>&ndash;&gt;-->
-<!--&lt;!&ndash;        </ul>&ndash;&gt;-->
-<!--    </footer>-->
 
     <div class="copyrighting">
-        <p class="copyrighting-text">
+        <p class="copyrighting__text">
             © 2020 Konstruct Inc. Designed by Jane Kathryn Teo
         </p>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', nav)
+        function nav(){
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.main-nav');
+            burger.addEventListener('click', ()=>{
+                nav.classList.toggle('show')
+            })
+        }
+    </script>
     </body>
 </html>
