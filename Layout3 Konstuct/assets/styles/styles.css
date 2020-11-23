@@ -68,7 +68,7 @@ header, section {
 }
 
 .presentation {
-    background-image: url("../images/bg-header.svg");
+    background-image: url("../images/bg-header.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -215,7 +215,7 @@ header, section {
 /*GET IN TOUCH*/
 
 .get-in-touch {
-    background-image: url("../images/bg-get-in-touch.svg");
+    background-image: url("../images/bg-get-in-touch.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -304,6 +304,10 @@ footer {
     margin-bottom: 12px;
 }
 
+    .link:hover {
+        color: var(--primary-color);
+    }
+
 .contact-us__container {
     display: flex;
 }
@@ -322,6 +326,7 @@ footer {
 
 .social-links__block {
     display: flex;
+    align-items: flex-start;
 }
 
 .social-links__block >:not(:last-child) {
