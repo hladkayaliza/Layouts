@@ -33,13 +33,13 @@ function transformCSS() {
     return src('assets/styles/**/*.css')
         .pipe(concatCss('styles/bundle.css'))
         .pipe(cleanCSS())
-        .pipe(dest('build'));
+        .pipe(dest('build/styles'));
 }
 
 function minifyJS() {
     return src('assets/scripts/*.js')
         .pipe(gulpMinify())
-        .pipe(dest('build'));
+        .pipe(dest('build/scripts'));
 }
 
 function watchTasks() {
@@ -54,6 +54,8 @@ function watchTasks() {
 exports.clean = clean;
 exports.watch = watchTasks;
 exports.style = transformCSS;
+exports.minifyJS = minifyJS;
+exports.minIMG = minIMG;
 exports.default = series(
     clean,
     parallel(transformCSS,copyHTML,minIMG,minifyJS),

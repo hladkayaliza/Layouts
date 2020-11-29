@@ -20,15 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c6a4332-239c-49fb-a019-fce6770f1394" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/scripts/nav-menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/bg-get-in-touch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/bg-header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/case-one.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/case-three.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/case-two.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/gmail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/img-one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/img-three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/img-two.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/logo-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/logo-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/images/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scripts/nav-menu-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scripts/nav-menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/styles/styles/bundle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/img-one.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/img-three.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/img-two.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/nav-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/nav-menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +93,7 @@
       <workItem from="1606200805706" duration="4405000" />
       <workItem from="1606241224737" duration="8831000" />
       <workItem from="1606339593173" duration="16191000" />
+      <workItem from="1606642897342" duration="1709000" />
     </task>
     <servers />
   </component>
