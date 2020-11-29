@@ -1,5 +1,5 @@
 :root {
-    --main-content-padding: 8em;
+    --main-content-padding: 6em;
     --1024-item-marging: 48px;
     --768-item-marging: 28px;
     --primary-color: #ffffff;
@@ -30,7 +30,6 @@ ul {
     list-style: none;
 }
 
-
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -58,7 +57,6 @@ header, section {
     .btn:hover {
         transform: scale(1.1, 1.1);
     }
-
 
 .section__title {
     text-transform: uppercase;
@@ -141,8 +139,19 @@ header, section {
 }
 
 .our-story__images {
+    display: flex;
+    justify-content: space-between;
+    /*min-width: 520px;*/
     padding: 8px 0 0 0;
 }
+
+.our-story__image {
+    margin-right: 26px;
+}
+
+    .our-story__image:last-child {
+        margin-right: 0;
+    }
 
 .our-story__col:first-child {
     max-width: 400px;
@@ -175,7 +184,7 @@ header, section {
 
 .our-capabilities__title {
     color: var(--text-color);
-    padding: 0 16px 16px 0;
+    padding-bottom: 16px;
     position: relative;
 }
 
@@ -192,12 +201,10 @@ header, section {
 
 /*CASES*/
 .cases {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /*grid-template-columns: repeat(auto-fill,322px);*/
-    /*grid-template-rows: 1fr;*/
-    /*grid-gap: 22px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-row: 1fr;
+    gap: 26px;
     padding: 32px var(--main-content-padding);
 }
 
@@ -205,7 +212,6 @@ header, section {
     border: 1px solid var(--border-color);
     max-width: 306px;
     padding: 15px;
-    margin-bottom: 26px;
     overflow-wrap: break-word;
 }
 .case >:not(:last-child) {
@@ -231,7 +237,6 @@ header, section {
 }
 
 .get-in-touch__title {
-    padding: 8px;
     word-break: break-word;
 }
 
@@ -242,6 +247,10 @@ header, section {
     padding: 35px var(--main-content-padding);
     background-color: #171819;
     height: 110px;
+}
+
+.signup__form {
+    display: flex;
 }
 
 .sign-up__title {
@@ -256,6 +265,7 @@ header, section {
     min-width: 362px;
     outline: none;
     padding: 8px 16px;
+    border: none;
 }
 
 .signup-conatiner {
@@ -324,6 +334,10 @@ footer {
     overflow-wrap: break-word;
 }
 
+.address__block :not(:last-child) {
+    margin-bottom: 26px;
+}
+
 .social-links__block {
     display: flex;
     align-items: flex-start;
@@ -331,6 +345,10 @@ footer {
 
 .social-links__block >:not(:last-child) {
     margin-right: 26px;
+}
+
+.social-link:hover {
+    transform: scale(1.8);
 }
 
 /*COPYRIGHTING*/
@@ -347,11 +365,10 @@ footer {
 
 @media (max-width: 1024px) {
     :root {
-        --main-content-padding: 6em;
+        --main-content-padding: 26px;
     }
 
     /*OUR STORY*/
-
     .our-story__content {
         flex-direction: column;
     }
@@ -387,9 +404,6 @@ footer {
         height: 150px;
     }
 
-    .sign-up__input {
-        /*min-width: 346px;*/
-    }
     .sign-up__title {
         margin: 0 0 16px;
     }
@@ -402,12 +416,15 @@ footer {
     }
 }
 
+@media (max-width: 860px) {
+    :root {
+        --main-content-padding: 12px;
+    }
+}
+
 
 
 @media (max-width: 768px) {
-    :root {
-        --main-content-padding: 4em;
-    }
 
     /*OUR STORY*/
     .our-story__content >:not(:last-child),
@@ -420,7 +437,6 @@ footer {
         justify-content: space-between;
     }
 
-
     /*OUR CAPABILITIES*/
     .our-capabilities {
         padding: 26px var(--main-content-padding);
@@ -429,14 +445,14 @@ footer {
         text-align: center;
     }
 
-    .our-capabilities :not(:last-child) {
-        margin-bottom: 16px;
-    }
+        .our-capabilities :not(:last-child) {
+            margin-bottom: 16px;
+        }
 
-    .our-capabilities__title::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
+        .our-capabilities__title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
 
     /*CASES*/
@@ -455,8 +471,8 @@ footer {
     }
 
     .signup__form {
+        display: flex;
         flex-direction: column;
-        text-align: center;
     }
 
     .signup__form >:not(:last-child) {
@@ -469,16 +485,11 @@ footer {
 }
 
 @media (max-width: 560px) {
-    :root {
-        --main-content-padding: 2em;
-    }
-
     h1 {
         font-size: 1.8em;
     }
 
     /*OUR STORY*/
-
     .our-story__content >:not(:last-child),
     .our-story > :not(.our-story__content) {
         margin-bottom: var(--768-item-marging);
@@ -492,13 +503,11 @@ footer {
     }
 
    /*CASES*/
-
     .case >:not(:last-child) {
         margin-bottom: 16px;
     }
 
     /*SIGN UP*/
-
     .sign-up {
         height: max-content;
     }
@@ -538,5 +547,4 @@ footer {
     .our-story__image {
         margin-bottom: 12px;
     }
-    
 }

@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c6a4332-239c-49fb-a019-fce6770f1394" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/scripts/nav-menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bg-get-in-touch.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bg-header.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img-one.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img-three.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img-two.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/nav-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/nav-menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -43,8 +47,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="default" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>default</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gulp.js.default" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -55,7 +79,10 @@
       <option name="presentableId" value="Default" />
       <updated>1605817021312</updated>
       <workItem from="1605817022387" duration="9022000" />
-      <workItem from="1605870786076" duration="52329000" />
+      <workItem from="1605870786076" duration="61381000" />
+      <workItem from="1606200805706" duration="4405000" />
+      <workItem from="1606241224737" duration="8831000" />
+      <workItem from="1606339593173" duration="16191000" />
     </task>
     <servers />
   </component>
@@ -79,6 +106,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606000536926" />
+    <state width="746" height="212" key="GridCell.Tab.0.bottom" timestamp="1606172139764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606172139764" />
+    <state width="746" height="212" key="GridCell.Tab.0.center" timestamp="1606172139763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606172139763" />
+    <state width="746" height="212" key="GridCell.Tab.0.left" timestamp="1606172139763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606172139763" />
+    <state width="746" height="212" key="GridCell.Tab.0.right" timestamp="1606172139764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606172139764" />
     <state x="-11" y="18" width="1146" height="810" maximized="true" key="dock-window-1" timestamp="1605941185785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

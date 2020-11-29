@@ -5,7 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 26px var(--main-content-padding);
+    width: 100%;
+    padding: 24px var(--main-content-padding);
     border: 1px solid var(--border-color);
     position: sticky;
     top:0;
@@ -14,20 +15,19 @@
 
 .main-nav {
     display: flex;
-    height: 8vh;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-.header__logo__image {
-    padding: 0 1em;
-}
+/*.header__logo__image {*/
+/*    padding: 0 1em;*/
+/*}*/
 .nav-links {
     display: flex;
-    width: 40%;
+    /*width: 40%;*/
 }
 .nav-links >:not(:last-child) {
-    margin-right: 26px;
+    margin-right: 58px;
 }
 
 .nav__link {
@@ -54,11 +54,7 @@
     transition: transform 0.75s ease, opacity 0.75s ease;
 }
 
-@media screen and (max-width: 800px) {
-    .nav-links {
-        width: 60%;
-    }
-}
+
 
 .main-nav.show .line1 {
     transform: translate(-10px) rotate(45deg) translate(15px);
@@ -74,7 +70,19 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    .nav-links {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .nav-links >:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
     .burger {
         display: block;
     }
