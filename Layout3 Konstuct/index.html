@@ -4,26 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Konstuct</title>
-        <link href="build/styles/bundle.css">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/nav-menu.css">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/normalize.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
-    <section class="presentation" id="presentation-section-id">
-        <img class="presentation__logo min-wrap" src="../images/logo-light.svg" alt="Logo" />
+    <section class="presentation">
+        <img class="presentation__logo " src="./assets/images/logo-light.svg" alt="Logo" />
 
-        <div class="title min-wrap">
+        <div class="title">
             <h1 class="title__name">PARTNER WITH KONSTUCT</h1>
             <p class="title__text">An award-winning construction management firm</p>
         </div>
 
-        <a class="scroll-link min-wrap" href="#our-story-section-id">SCROLL DOWN</a>
+        <a class="scroll-link" href="#our-story-section-id">SCROLL DOWN</a>
     </section>
 
     <header class="app-header">
         <nav class="main-nav">
-            <img class="header__logo__image" src="../images/logo-dark.svg" alt="Logo" />
+            <img class="header__logo-image" src="./assets/images/logo-dark.svg" alt="Logo" />
 
             <ul class="nav-links">
                 <li class="nav-links__item">
@@ -44,22 +46,22 @@
             </ul>
 
             <div class="burger">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
+                <div class="burger__line line1"></div>
+                <div class="burger__line line2"></div>
+                <div class="burger__line line3"></div>
             </div>
         </nav>
 
     </header>
 
-    <section class="our-story" id="our-story-section-id">
-        <h2 class="section__title our-story__title">our story</h2>
+    <section class="our-story" id="our-story-section">
+        <h2 class="our-story__title section-title">our story</h2>
         <div class="our-story__content">
-            <div class="our-story__col">
-                <h3 class="our-story__col__title">Founded in 2011 by John Mathew Smith,
-                    <span class="our-story__col__key-word">Konstruct</span> has become the number
+            <div class="our-story__col col">
+                <h3 class="col__title">Founded in 2011 by John Mathew Smith,
+                    <span class="col__key-word">Konstruct</span> has become the number
                     one construction management firm</h3>
-                <p class="our-story__col__text">
+                <p class="col__text">
                     Lorem ipsum dolor sit amet,
                     consectetuer adipiscing elit,
                     sed diam nonummy nibh euismod tincidunt
@@ -70,17 +72,26 @@
                 </p>
             </div>
 
-            <div class="our-story-col our-story__images">
-                <img class="our-story__image" src="../images/img-one.png" alt="Image one" />
-                <img class="our-story__image" src="../images/img-two.png" alt="Image two" />
-                <img class="our-story__image" src="../images/img-three.png" alt="Image three" />
+            <div class="our-story__col our-story__images">
+                <div class="our-story__image image">
+                    <img src="./assets/images/img-one.png" alt="Image one" />
+                    <p class="image__text" class="">we <br/> plan</p>
+                </div>
+                <div class="our-story__image image">
+                    <img src="./assets/images/img-two.png" alt="Image two" />
+                    <p class="image__text">we <br/> manage</p>
+                </div>
+                <div class="our-story__image image">
+                    <img src="./assets/images/img-three.png" alt="Image three" />
+                    <p class="image__text">we <br/> build</p>
+                </div>
             </div>
 
         </div>
     </section>
 
     <section class="our-capabilities" id="our-capabilities-id">
-        <h2 class="section__title our-capabilities__title">our capabilities</h2>
+        <h2 class="our-capabilities__title section-title">our capabilities</h2>
         <p class="our-capabilities__text">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
             ut laoreet dolore magna aliquam erat.
@@ -90,7 +101,7 @@
 
     <section class="cases" id="cases-section-id">
         <div class="case">
-            <img class="case__img" src="../images/case-one.svg" alt="Case one" />
+            <img class="case__img" src="./assets/images/case-one.svg" alt="Case one" />
             <h3 class="case__title">PROJECT AND CONSTRUCTION MANAGEMENT</h3>
             <p class="case__text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -98,7 +109,7 @@
             </p>
         </div>
         <div class="case">
-            <img class="case__img" src="../images/case-two.svg" alt="Case two" />
+            <img class="case__img" src="./assets/images/case-two.svg" alt="Case two" />
             <h3 class="case__title">STRUCTURE AUDIT AND MAINTENANCE</h3>
             <p class="case__text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -107,7 +118,7 @@
         </div>
 
         <div class="case">
-            <img class="case__img" src="../images/case-three.svg" alt="Case three" />
+            <img class="case__img" src="./assets/images/case-three.svg" alt="Case three" />
             <h3 class="case__title">FACTORY CONSTRUCTION AND MODELING</h3>
             <p class="case__text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -127,15 +138,15 @@
         <h2 class="sign-up__title">Newsletter Signup</h2>
         <form method="post" action="#" class="signup__form">
             <input class="sign-up__input" type="email" placeholder="test@youremail.com" />
-            <button class="btn sign-up__submit" type="submit" class="btn">SIGNUP</button>
+            <button class="btn sign-up__submit" type="submit">SIGNUP</button>
         </form>
     </section>
 
     <footer  class="app-footer">
-        <div class="footer__block company">
-            <h4 class="footer__block__title">COMPANY</h4>
+        <div class="footer__block ">
+            <h4 class="footer__block-title">COMPANY</h4>
 
-            <img class="footer__logo" src="../images/logo-light.svg" alt="Logo">
+            <img class="footer__logo" src="./assets/images/logo-light.svg" alt="Logo">
 
             <p class="company__block__text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -144,7 +155,7 @@
             </p>
         </div>
         <div class="footer__block">
-            <h4 class="footer__block__title">LINKS</h4>
+            <h4 class="footer__block-title">LINKS</h4>
             <div class="links__container">
                 <ul class="links">
                     <li class="link-item">
@@ -189,47 +200,44 @@
         </div>
 
         <div class="footer__block">
-            <h4 class="footer__block__title">CONTACT US</h4>
+            <h4 class="footer__block-title">CONTACT US</h4>
             <div class="contact-us__container">
-                <div class="address__block">
+                <address class="address__block">
                     <a class="link" href="http://maps.google.com/?q=213 Baker Street Oriel City Kounty 7000 KNW, USA" target="_blank">
                         213 Baker Street Oriel City Kounty 7000 KNW, USA
                     </a>
                     <a class="link" href="tel: +23 994 233 4022">+23 994 233 4022</a>
                     <a class="link" href="mailto:webmaster@somedomain.com">info@konstruct.com</a>
-                </div>
+                </address>
+
                 <ul class="social-links__block">
                     <li class="social-link">
                         <a href="https://twitter.com/" target="_blank">
-                            <img class="social-image" src="../images/twitter.svg" alt="Twitter">
+                            <img class="social-image" src="./assets/images/twitter.svg" alt="Twitter">
                         </a>
                     </li>
                     <li class="social-link">
                         <a href="https://www.facebook.com/" target="_blank">
-                            <img class="social-image" src="../images/facebook.svg" alt="Facebook">
+                            <img class="social-image" src="./assets/images/facebook.svg" alt="Facebook">
                         </a>
                     </li>
                     <li class="social-link">
                         <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank">
-                            <img class="social-image" src="../images/gmail.svg" alt="Gmail">
+                            <img class="social-image" src="./assets/images/gmail.svg" alt="Gmail">
                         </a>
                     </li>
 
                 </ul>
-
-
             </div>
 
         </div>
     </footer>
 
 
-    <div class="copyrighting">
-        <p class="copyrighting__text">
+    <section class="copyrighting copyrighting__text">
             © 2020 Konstruct Inc. Designed by Jane Kathryn Teo
-        </p>
-    </div>
+    </section>
 
-    <script type="text/javascript" src="./build/scripts/nav-menu-min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/nav-menu.js"></script>
     </body>
 </html>

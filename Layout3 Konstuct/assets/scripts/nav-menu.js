@@ -1,32 +1,32 @@
-document.addEventListener('DOMContentLoaded', nav)
+document.addEventListener('DOMContentLoaded', onNavResize)
 
-function nav(){
+function onNavResize(){
     const burger = document.querySelector('.burger');
-    const appHeader = document.querySelector('.app-header');
     const nav = document.querySelector('.main-nav');
     const links = document.querySelector('.nav-links');
-    const body = document.querySelector('body');
-    burger.addEventListener('click', (e)=>{
-        e.preventDefault();
-        display(nav);
+    burger.addEventListener('click', (evt)=>{
+        evt.preventDefault();
+        showMenu(nav);
     });
 
-    links.addEventListener('click', (e)=>{
-        e.preventDefault();
-        display(nav)
+    links.addEventListener('click', (evt)=>{
+        evt.preventDefault();
+        showMenu(nav)
     });
 }
+const body = document.querySelector('body');
+const appHeader = document.querySelector('.app-header');
 
-function display(nav) {
-    const body = document.querySelector('body');
-    const appHeader = document.querySelector('.app-header');
-
+function showMenu(nav) {
     nav.classList.toggle('show');
-    if (nav.classList.contains('show')) {
-        body.setAttribute('style', 'overflow: hidden');
-        appHeader.setAttribute('style', 'position: fixed');
-    } else {
-        appHeader.setAttribute('style', 'position: sticky');
-        body.setAttribute('style', 'overflow: auto');
-    }
+    body.classList.toggle('overflow-hide');
+    appHeader.classList.toggle('pos-fix');
+
+    // if (nav.classList.contains('show')) {
+    //     body.setAttribute('style', 'overflow: hidden');
+    //     appHeader.setAttribute('style', 'position: fixed');
+    // } else {
+    //     appHeader.setAttribute('style', 'position: sticky');
+    //     body.setAttribute('style', 'overflow: auto');
+    // }
 }

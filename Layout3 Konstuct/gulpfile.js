@@ -14,7 +14,7 @@ function serve() {
 }
 
 function clean() {
-    return src('build', {read: false})
+    return src('build', {read: false, allowEmpty: true})
         .pipe(gulpClean());
 }
 
@@ -23,23 +23,23 @@ function copyHTML(_cb) {
         .pipe(dest('build'));
 }
 
-function minIMG(_cb) {
+function minifyIMG(_cb) {
     return src('assets/images/*')
         .pipe(imagemin())
-        .pipe(dest('build/images'));
+        .pipe(dest('build/assets/images'));
 }
 
 function transformCSS() {
     return src('assets/styles/**/*.css')
-        .pipe(concatCss('styles/bundle.css'))
+        .pipe(concatCss('assets/styles/bundle.css'))
         .pipe(cleanCSS())
-        .pipe(dest('build/styles'));
+        .pipe(dest('build/assets/styles'));
 }
 
 function minifyJS() {
     return src('assets/scripts/*.js')
         .pipe(gulpMinify())
-        .pipe(dest('build/scripts'));
+        .pipe(dest('build/assets/scripts'));
 }
 
 function watchTasks() {
@@ -55,9 +55,9 @@ exports.clean = clean;
 exports.watch = watchTasks;
 exports.style = transformCSS;
 exports.minifyJS = minifyJS;
-exports.minIMG = minIMG;
+exports.minifyIMG = minifyIMG;
 exports.default = series(
     clean,
-    parallel(transformCSS,copyHTML,minIMG,minifyJS),
+    parallel(transformCSS,copyHTML,minifyIMG,minifyJS),
     parallel(watchTasks, serve)
 );
